@@ -1,0 +1,209 @@
+h2 {
+    color: rgb(0, 217, 255);
+    font-size: xx-large;
+}
+
+.gain{
+    text-align: left;
+    margin-top: 0px;
+    width: auto;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+.subtitle {
+    color: greenyellow;
+    font-size: x-large;
+    margin-top: 0px;
+}
+
+.subtitle1 {
+    font-size: x-large;
+    display: inline;
+    align-self: center;
+}
+
+.titlegrid3 {
+    color: white;
+}
+
+.bignumber {
+    display: flex;
+    font-size: 50px;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    height: auto;
+    width: auto;
+    padding-left: 40px;
+}
+
+.month {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    height: auto;
+    width: auto;
+    padding-left: 100px;
+
+
+}
+
+body {
+    display: flex;
+    background-color: rgb(161, 167, 168);
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 350px;
+    grid-template-areas: 'a a'
+                         'b c';
+    width: 900px;
+
+
+
+}
+
+.class1 {
+    display: grid;
+    grid-area: a;
+    border: 1px solid white;
+    height: 1fr;
+    padding: 50px;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    line-height: 35px;
+}
+
+.class2 {
+    display: grid;
+    grid-area: b;
+    border: 1px solid rgb(10, 224, 214);
+    background-color: rgb(10, 224, 214);
+    color: white;
+    align-content: center center;
+    padding: 20px 50px 50px 50px;
+    border-radius: 0px 0px 0px 15px;
+    text-align: center;
+}
+
+.class3 {
+    display: grid;
+    grid-area: c;
+    border: 1px solid rgb(72, 205, 209);
+    background-color: rgb(72, 205, 209);
+    color: white;
+    font-size: larger;
+    padding: 20px 50px 50px 50px;
+    border-radius: 0px 0px 15px 0px;
+    line-height: 25px;
+}
+
+button {
+    background-color: greenyellow;
+    width: 250px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 50px;
+
+}
+
+@media(max-width:700px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 350px 350px;
+        grid-template-areas: 'a'
+                             'b'
+                             'c';
+        height: 500px;
+    }
+
+    .class1 {
+        display: grid;
+        grid-area: a;
+        border: 1px solid white;
+        height: 1fr;
+        padding: 50px;
+    }
+
+    .class2 {
+        display: grid;
+        grid-area: b;
+        border: 1px solid rgb(10, 224, 214);
+        background-color: rgb(10, 224, 214);
+        color: white;
+        align-items: center center;
+        padding: 20px 50px 50px 50px;
+        border-radius: 0px 0px 0px 0px;
+
+    }
+
+    .class3 {
+        display: grid;
+        grid-area: c;
+        border: 1px solid rgb(72, 205, 209);
+        background-color: rgb(72, 205, 209);
+        color: white;
+        font-size: larger;
+        padding: 25px 50px 50px 50px;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    h2 {
+        color: rgb(0, 217, 255);
+
+    }
+
+    .subtitle {
+        color: chartreuse;
+        font-size: large;
+    }
+
+    .subtitle1 {
+        font-size: large;
+        display: inline;
+        align-self: center;
+    }
+
+    .titlegrid3 {
+        color: white;
+    }
+
+    .bignumber {
+        font-size: xx-large;
+    }
+
+    .month {
+        padding-left: 100px;
+
+    }    
+
+    body {
+        display: flex;
+        border: 1px solid white;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    button {
+        background-color: greenyellow;
+        width: 250px;
+        height: 45px;
+        cursor: pointer;
+        border-radius: 4px;
+        text-align: center;
+        margin: auto;
+
+    }
+}
